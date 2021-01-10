@@ -6,8 +6,8 @@ prospects <- data.frame(
   bias = rnorm(1000,0,2),
   randomness = runif(1000,-2,2)
 ) %>%
-  mutate(makes_nhl = ifelse(bias + skill>1,1,0),
-         true_value = skill + randomness)
+  mutate(makes_nhl = ifelse(2*bias + skill>1,1,0),
+         true_value = skill + bias + randomness)
 
 
 draft_mod <- glm(makes_nhl ~ skill, 

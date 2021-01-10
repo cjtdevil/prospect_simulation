@@ -2,7 +2,7 @@
 title: "Simulation Writeup"
 author: "CJ Turtoro"
 date: "1/9/2021"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 # Simulating Draft Valuations
